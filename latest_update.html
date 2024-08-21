@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Registeration Form</title>
+        <link rel="stylesheet" href="update_style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    </head>
+    <body id="bodyStyle">
+        <div class="container">
+            <div class="headingContainer">
+                <div class="iconContainer">
+                        <div>
+                            <i class="fas fa-lightbulb medium"></i>
+                        </div>
+                </div>
+                <div class="formHeadingContainer">
+                        <div class="iconContent">
+                            <b>Creative
+                            <p>Event</p></b>
+                        </div>
+                <div class="formHeading">
+                    <b>Event Registeration Form</b>
+                </div>
+                </div>
+            </div>
+            <div class="mainBody">
+                <div class="aboutColumn">
+                    <div class="aboutContent">
+                        <header id="aboutHeading"><b>About This Event</b></header>
+                        <div class="aboutDetails">
+                            <pre style="font-family:Arial, sans-serif;">Event Name           : Social Media Creator</pre>
+                            <pre style="font-family:Arial, sans-serif;">Date                       : August 29,2023</pre>
+                            <pre style="font-family:Arial, sans-serif;">Time                       : 1:00 PM-3:00 PM</pre>
+                            <pre style="font-family:Arial, sans-serif;">Speaker                 : Michele Erica(Social Media Speaker)</pre>
+                            <pre style="font-family:Arial, sans-serif;">Organizer               : Creative Event</pre>
+                            <pre style="font-family:Arial, sans-serif;">More information    : www.creativeevent.com</pre>
+                        </div>
+                    </div>
+                    <div class="aboutProfile">
+                        <img src="/phase_1/images/speaker.jpg" alt="Image of Michelle Erica" 
+                        style="width:115px;height:115px;border-radius: 50%;" id="profileImage"> 
+                        <p style="line-height:0.1px;">Speaker</p>
+                        <p><b>Michelle Erica</b></p>
+                    </div>
+                </div>
+                <hr>
+                <header id="personalInfoHeading"><b>Personal Information</b></header>
+            <form>
+                <div class="column">
+                    <div class="textField">
+                        <label>Full Name</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Ann Mary Babu"
+                        onblur="nameValidation()" />
+                        <p id="nameErrorMessage"></p>
+                    </div>
+                    <div class="textField">
+                        <label>Date of Birth</label>
+                        <input type="date" id="dateOfBirth" name="dateOfBirth" onclick="setMaxDate()" onfocusout="dateOfBirthValidation()">
+                        <p id="dateErrorMessage"></p>
+                        <p id="ageMessage"></p>
+                    </div>
+                </div>
+                <div class="genderColumn">
+                        <label style="margin-top: 18px;">Gender</label>
+                        <div class="subColumn">
+                            <div>
+                                <input type="radio" id="male" name="gender" value="male"/>
+                                <label>Male</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="female" name="gender" value="female"/>
+                                <label>Female</label>
+                            </div>
+                        </div>
+                </div>
+                <p id="genderErrorMessage"></p> 
+                <div class="column" style="margin-top: 18px;">
+                    <div class="textField">
+                        <label>Phone Number</label>
+                        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="9763421109" 
+                        onkeyup="phoneNumberValidation()" />
+                        <p id="phoneNumberErrorMessage"></p>
+                    </div>
+                    <div class="textField">
+                        <label>Email</label>
+                        <input type="email" id="email" name="email" placeholder="abcd@gmail.com" 
+                        onfocusout="emailValidation()" />
+                        <p id="emailErrorMessage"></p>
+                    </div>
+                </div>
+                <div style="margin-top: 18px;">
+                <label>Where did you hear about this virtual event?</label>
+                </div>
+                <div class="columnMedia">
+                    <div>
+                        <input type="radio" id="facebook" name="media" value="facabook">
+                        <label>Facebook</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="youtube" name="media" value="youtube">
+                        <label>Youtube</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="instagram" name="media" value="instagram">
+                        <label>Instagram</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="twitter" name="media" value="twitter">
+                        <label>Twitter</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="other" name="media" value="other" >
+                        <label>Other</label>
+                    </div>
+                </div>
+                <p id="mediaErrorMessage"></p>
+            <hr style="margin-top:20px;">
+            <header id="paymentHeading"><b>Payment Method</b></header>
+                <div class="columnPayment">
+                    <div class="textFieldSecond">
+                        <label>Number of tickets</label>
+                        <input type="text" id="numberOfTicket" name="nnumberOfTicket"
+                        onfocusout="numberOfTicketValidation()"/>
+                        <p id="numberOfTicketErrorMessage"></p>
+                    </div>
+                    <div>
+                        <label>Payment Method:</label>
+                    <div class="columnPaymentOption">
+                        <div>
+                            <input type="radio" id="creditCard" name="pMethod" value="creditCard" onfocusout="checkPayment()">
+                            <label>Creditcard</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="debitCard" name="pMethod" value="debitCard" onfocusout="checkPayment()">
+                            <label>Debit Card</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="cash" name="pMethod" value="cash" onfocusout="checkPayment()">
+                            <label>Cash</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="check" name="pMethod" value="check" onfocusout="checkPayment()">
+                            <label for="check">Check</label>
+                        </div>
+                    </div>
+                    <p id="paymentErrorMessage"></p>
+                    </div>
+                </div>
+            <hr style="margin-top:20px;margin-bottom:10px;">
+            <div class="declarationColumn">
+                <div class="declarationContent">
+                    <p style="margin-top:30px;">I undestand that participation in this event may involve</p>
+                    <p>some degree of risk. 
+                    I release WebinarPros LLC from any</p><p>liability for injury, loss, or 
+                    damage to personal property.</p>
+                    <button type="button" onclick="checkValidation()" id="submitButton">Submit</button>
+                </div>
+                <div class="declarationSign">
+                    <p>Date: August 29,2030</p>
+                    <img src="/phase_1/images/signature.jpg" alt="Signature Image" style="width:100px; height:50px;"> 
+                    <hr style="width:170px">
+                    <p><b>James John</b></p>
+                </div>
+        </div>
+        </form>
+        </div>
+        </div>
+        <script src="latest_updatejsfile.js"></script>
+    </body>
+</html>

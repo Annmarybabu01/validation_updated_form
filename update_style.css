@@ -1,0 +1,220 @@
+#bodyStyle{
+    display:flex;
+    justify-content:center;
+    min-height:200vh;
+    background:linear-gradient(to bottom, hsl(0, 30%, 95%), #f1a0a0);
+    font-family:Arial, sans-serif;
+}
+.container{
+    margin-top:50px;
+    margin-bottom:40px;
+}
+.headingContainer {
+    display:flex;
+    column-gap:10px
+}
+.iconContainer {
+    font-size:35px;
+}
+.formHeadingContainer {
+    display:flex;
+    column-gap:295px
+}
+.iconContent {
+    margin-top:10px;
+    line-height:0.5px;
+}
+.formHeading {
+    font-size:38px;
+}
+.mainBody {
+    border:2px solid black;
+    border-radius:25px;
+    background-color: white;
+    padding:45px 50px 30px 30px;
+}
+#aboutHeading {
+    font-size:20px;
+    margin-bottom:6px;
+}
+.aboutProfile {
+    text-align:center;
+}
+#profileImage {
+    opacity: 1.0;
+}
+#profileImage:hover {
+    opacity: 0.5;
+}
+.aboutDetails {
+    line-height:0.6;
+    font-size:15px;
+}
+.aboutColumn{
+    display:flex;
+    column-gap:280px;
+}
+#nameSpeaker{
+    line-height:1;
+}
+#personalInfoHeading {
+    font-size:20px;
+    margin-top:30px;
+    margin-bottom:18px;
+}
+.column {
+    display:flex;
+    column-gap:80px;  
+}
+.textField {
+    width:100%;
+    line-height:0.1;
+}
+.textField input {
+    position:relative;
+    height:25px;
+    width:100%;
+    margin-top:8px;
+    border-radius:45px;
+    background-color:rgb(246, 238, 238);
+    padding-left:15px;
+    padding-right: 15px;
+}
+.textField label {
+    font-size:15px;
+}
+.genderColumn {
+    display:flex;
+    column-gap:60px;
+}
+.subColumn {
+    display:flex;
+    column-gap:40px;
+    margin-top: 15px;
+}
+.columnMedia{
+    display:flex;
+    column-gap:74px;
+    margin-top: 18px;
+}
+.genderColumn input[type="radio"]{
+    width:30px;
+    height:30px;  
+    vertical-align:middle;
+    background-color: hsl(0, 30%, 95%);
+}
+.columnMedia input[type="radio"]{
+    width:30px;
+    height:30px;
+    vertical-align:middle;
+    background-color: hsl(0, 30%, 95%);
+}
+#paymentHeading {
+    font-size:20px;
+    margin-top:30px;
+    margin-bottom:18px;
+}
+.textFieldSecond input {
+    position:relative;
+    height:25px;
+    width:100%;
+    margin-top:12px;
+    border-radius:45px;
+    background-color: rgb(246, 238, 238);
+}
+.columnPayment {
+    display:flex;
+    column-gap:30px;
+}
+.columnPaymentOption {
+    display:flex;
+    column-gap:20px; 
+    margin-top:12px;  
+}
+.columnPaymentOption input[type="radio"]{
+    width:30px;
+    height:30px;
+    vertical-align: middle;
+    background-color: #f5eded;
+}
+.declarationContent {
+    line-height:1;
+}
+.declarationColumn {
+    display:flex;
+    column-gap:220px;
+}
+.declarationSign {
+    text-align:right;
+}
+#numberOfTicket {
+    padding-left:15px;
+}
+#emailErrorMessage {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+#phoneNumberErrorMessage {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+#nameErrorMessage {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+#numberOfTicketErrorMessage {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+/* change color according to error*/
+.inputError {
+    border: 2px solid red;
+}
+.inputValid {
+    border: 2px solid green;
+}
+#dateErrorMessage {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+#dateErrorMessage {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+#ageMessage {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+#paymentErrorMessage {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+#mediaErrorMessage {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+#genderErrorMessage {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+#submitButton {
+    text-align: center;
+    background-color:hsl(16, 70%, 94%);
+    width:80px;
+    height:50px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#submitButton:hover {
+    background-color: rgb(172, 236, 172);
+}
